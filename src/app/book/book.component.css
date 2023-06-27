@@ -1,0 +1,17 @@
+li {
+    list-style: none;
+}
+
+.book {
+    cursor: pointer;
+}
+
+.btn {
+    background-color: rgb(1, 1, 233);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}

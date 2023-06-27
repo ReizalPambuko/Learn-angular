@@ -1,0 +1,14 @@
+<!-- <button [disabled]="isDisable" (click)="handleClick()">Add Cart</button> -->
+<button (click)="isShow()">
+    <ng-container *ngIf="!show">Tampilkan</ng-container>
+    <ng-container *ngIf="show">Sembunyikan</ng-container>
+</button>
+<!-- <h3>{{myName}}</h3> -->
+<!-- <input type="text" (input)="handleInput($event)"> -->
+<!-- <input type="text" [(ngModel)]="myName"> -->
+<h1 style="margin-bottom: 50px;">Book list Programming</h1>
+<ul *ngIf="show">
+    <ng-container *ngFor="let singleBook of books">
+        <app-book [book]="singleBook"></app-book>
+    </ng-container>
+</ul>

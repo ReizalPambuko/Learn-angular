@@ -1,0 +1,11 @@
+<p>cart works!</p>
+<div *ngIf="getCart().length > 0">
+    <ng-container *ngFor="let item of getCart()">
+        <p>{{item.name}}</p>
+    </ng-container>
+</div>
+<div *ngIf="getCart().length === 0">Cart masih kosong</div>
+
+<div class="mt-96 text-center">
+    <a routerLink="" class="text-red-600">Kembali ke halaman utama</a>
+</div>
